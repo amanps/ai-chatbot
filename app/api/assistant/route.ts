@@ -98,7 +98,7 @@ export async function POST(req: Request) {
           runResult.required_action.submit_tool_outputs.tool_calls
         const toolOutputs = []
         const availableFunctions: { [key: string]: Function } = {
-          run_sql_query: callAPI
+          run_user_query: callAPI
         }
 
         for (const toolCall of toolCalls) {
