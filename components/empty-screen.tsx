@@ -6,16 +6,16 @@ import { IconArrowRight } from '@/components/ui/icons'
 
 const exampleMessages = [
   {
-    heading: 'The green card process',
-    message: `How does the green card process work?`
+    heading: 'The application process',
+    message: `How does the application process work?`
   },
   {
-    heading: 'Traveling with a pending H1B application',
-    message: `Can I travel internationally while on an H1B visa?`
+    heading: 'Campus life and facilities',
+    message: `What is life on campus like? What facilities are available?`
   },
   {
-    heading: 'Switching employers on an H1B visa',
-    message: `Can I switch employers while on an H1B visa?`
+    heading: 'Financial aid options',
+    message: `What financial aid options do you offer?`
   }
 ]
 
@@ -32,9 +32,9 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           <ExternalLink href="https://supabase.com">Supabase</ExternalLink>.
         </p> */}
         <p className="leading-normal text-muted-foreground">
-          I&apos;m your campus assistant. How can I help?
+          Ask me anything about our university.
         </p>
-        {/* <div className="mt-4 flex flex-col items-start space-y-2">
+        <div className="mt-4 flex flex-col items-start space-y-2">
           {exampleMessages.map((message, index) => (
             <Button
               key={index}
@@ -46,7 +46,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
               {message.heading}
             </Button>
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   )
