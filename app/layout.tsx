@@ -35,7 +35,7 @@ interface RootLayoutProps {
 }
 
 export default async function RootLayout({ children }: RootLayoutProps) {
-  const clientId = 'corposerve'
+  const clientId = 'aman-ritiz'
   const config = await getCustomClientConfig(clientId)
   return (
     <html lang="en" suppressHydrationWarning>
@@ -57,7 +57,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           <div className="flex min-h-screen flex-col">
             {/* @ts-ignore */}
             <ImageHeader />
-            <main className="flex flex-1 flex-col bg-background">
+            <main className="flex flex-1 flex-col bg-muted/50">
               {children}
             </main>
           </div>
